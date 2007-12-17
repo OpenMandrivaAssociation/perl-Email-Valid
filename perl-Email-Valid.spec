@@ -18,7 +18,6 @@ BuildRequires:  perl-devel >= 0:5.600
 BuildRequires:  perl(Mail::Address)
 BuildRequires:  perl(Net::DNS)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module determines whether an email address is well-formed, and
