@@ -1,8 +1,8 @@
 %define module      Email-Valid
 %define name        perl-%{module}
-%define version     0.17.9
-%define revision    0.179
-%define release     %mkrel 3
+%define up_version  0.180
+%define version     %perl_convert_version %{up_version}
+%define release     %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -11,10 +11,7 @@ Summary:        Check validity of Internet email addresses
 License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%module/
-Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{revision}.tar.bz2
-%if %{mdkversion} < 1010
-BuildRequires:  perl-devel >= 0:5.600
-%endif
+Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.gz
 BuildRequires:  perl(Mail::Address)
 BuildRequires:  perl(Net::DNS)
 BuildArch:      noarch
@@ -26,7 +23,7 @@ optionally, whether a mail host exists for the domain or whether
 the top level domain of the email address is valid.  
 
 %prep
-%setup -q -n %{module}-%{revision}
+%setup -q -n %{module}-%{up_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
