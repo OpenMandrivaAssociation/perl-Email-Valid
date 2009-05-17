@@ -1,6 +1,6 @@
 %define module      Email-Valid
 %define name        perl-%{module}
-%define up_version  0.180
+%define up_version  0.181
 %define version     %perl_convert_version %{up_version}
 %define release     %mkrel 1
 
