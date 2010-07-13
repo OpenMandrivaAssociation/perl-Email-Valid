@@ -1,5 +1,5 @@
 %define upstream_name     Email-Valid
-%define upstream_version  0.182
+%define upstream_version 0.184
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
