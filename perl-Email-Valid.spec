@@ -1,15 +1,15 @@
 %define upstream_name     Email-Valid
-%define upstream_version 0.190
+%define upstream_version 1.192
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.190
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Check validity of Internet email addresses
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Email/Email-Valid-0.190.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Email/Email-Valid-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Mail::Address)
@@ -103,5 +103,6 @@ make test
 
 * Mon Jan 17 2005 Stefan van der Eijk <stefan@mandrake.org> 0.15-2mdk
 - yearly rebuild
+
 
 
