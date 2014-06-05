@@ -1,11 +1,12 @@
 %define upstream_name     Email-Valid
-%define upstream_version 1.193
+%define upstream_version 1.194
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Check validity of Internet email addresses
+
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -40,5 +41,6 @@ make test
 %doc README Changes
 %{perl_vendorlib}/Email
 %{_mandir}/*/*
+
 
 

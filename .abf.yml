@@ -2,5 +2,6 @@ removed_sources:
   Email-Valid-0.184.tar.gz: a6a5810393f34bb9fdcb0afb1c91bc975666ac99
   Email-Valid-0.190.tar.gz: 7e185f8e8851b9b195f8a2259d68ad4db6a5fce1
   Email-Valid-1.192.tar.gz: 25341bf752ede461e05f5cf04f2179759500574b
-sources:
   Email-Valid-1.193.tar.gz: e64450c978238564cce6f5c1cc5c41837dba7e10
+sources:
+  Email-Valid-1.194.tar.gz: a0e6c1567dc562c53ecf6f75475f78c545e0dd9e
